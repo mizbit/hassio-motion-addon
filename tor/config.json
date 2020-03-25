@@ -1,0 +1,26 @@
+{
+  "name": "Tor",
+  "version": "1.0",
+  "slug": "tor",
+  "description": "The onion router hidden service provider",
+  "startup": "system",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "i386"
+  ],
+  "boot": "auto",
+  "ports": {
+    "80/tcp": 80
+   },
+  "map": [
+    "share:rw"
+  ],
+  "options": {
+	"client_name": ""
+  },
+  "schema": {
+	"client_name": "str"
+  }
+}
